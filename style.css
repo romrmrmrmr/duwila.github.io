@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Menyimpan semua elemen teks di tengah halaman */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px; /* Atur padding untuk memberi ruang di sekitar teks menu */
+    border-radius: 5px; /* Atur border-radius untuk memberi sudut yang lebih lembut pada menu */
+    background-color: #333; /* Atur warna latar belakang menu */
+}
+
+/* Contoh CSS untuk mengatur ukuran gambar di seluruh halaman */
+img {
+    max-width: 100%; /* Maksimum lebar gambar adalah lebar elemen induknya */
+    height: auto; /* Lebar dan tinggi gambar akan disesuaikan agar gambar tidak terdistorsi */
+}
+
+/* Contoh CSS untuk mengatur ukuran gambar di dalam section "menu" */
+#menu {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url("backgrund.webp"); /* Ganti "nama_gambar.jpg" dengan nama berkas gambar yang Anda inginkan */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Atur warna teks pada bagian "Menu Makanan" untuk kontras dengan gambar latar belakang */
+}
+
+
+#menu img {
+    width: 500px; /* Atur lebar gambar menjadi 200 piksel */
+    height: 150px; /* Atur tinggi gambar menjadi 150 piksel */
+}
+/* Tambahkan efek animasi pada gambar menu */
+#menu img {
+    transition: transform 0.2s; /* Atur transisi untuk animasi */
+}
+
+#menu img:hover {
+    transform: scale(1.1); /* Buat gambar menu membesar saat mengarahkan kursor ke gambar */
+}
+
+section {
+    padding: 200px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+}
+#home {
+    /* ... Properti lain seperti yang sudah ditambahkan sebelumnya ... */
+    position: relative;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* Atur efek gradasi */
+}
+
+#location {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Untuk membuat iframe responsif, sesuaikan sesuai dengan proporsi aspek peta */
+    height: 0;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+address {
+    margin-top: 20px;
+}
